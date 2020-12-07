@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<!-- start html -->
+<!-- start head -->
+<head>
+<!-- meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<!-- title -->
+<title>Contact | Alice Houston Copy</title>
+<!-- start container fluid div (BS)-->
+<div class="container-fluid">
+</head>
+<!-- end head -->
+
+	<!-- start navigation -->
+	<div id="navbar" class="nav-bar">
+		<ul id="nav-list">
+			<li class="navitem navtop"><a href="index.html">Home</a></li>
+			<li class="navitem navabout"><a href="index.html#about">About</a></li>
+			<li class="navitem navservices"><a href="services.html">Services</a></li>
+			<li class="navitem navtestimonials"><a href="testimonials.html">Testimonials</a></li>
+			<li class="navitem navportfolio"><a href="portfolio.html">Portfolio</a></li>      
+			<li class="navitem navcontact"><a href="contact.html" style="color: rgb(236, 14, 14)"><strong>Contact</strong></a></li>
+		</ul>
+	</div>
+	<!-- end navigation -->
+
+<div id="contact-section">
+  <h1 id="contactheader">Let's Work Together</h1>
+<form name="contact-form" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <label>Name *</label> 
+    <input type="text" class="form-control" name="name" placeholder="Name"/>
+    <label>Email *</label> 
+    <input type="email" class="form-control" name="email" placeholder="Email"/>
+    <label>Phone Number *</label> 
+    <input type="tel" class="form-control" name="number" placeholder="Phone Number"/>
+    <label>Message</label> 
+    <textarea name="message" class="form-control" class="input-textarea"></textarea></label>
+    <button type="submit" class="submit-button" onclick="return validateForm()">Submit</button>
+</form>
+
+<!-- JS -->
+<script>
+  function validateForm() {
+  var a = document.forms["contact-form"]["name"].value;
+  var b = document.forms["contact-form"]["email"].value;
+  var c = document.forms["contact-form"]["number"].value;
+  var d = document.forms["contact-form"]["message"].value;
+  if (a == null || a == "", b == null || b == "", c == "" | c == null) {
+    alert("Please fill all required fields");
+    return false;
+  }
+  else if (d == null || d == "") {
+    if (confirm("Your message is blank, do you still wish to submit?")) {
+      alert("Form submitted");
+
+    }
+    else {
+      alert("Submission cancelled");
+      return false;
+    }
+  else {
+    return true();
+  }
+  }
+}
+</script>
+<!-- end JS -->
+<!-- end contact section -->
+</div>
+
+<!-- start profile link section -->
+<div id="profilescontact">
+  <div class="profiles">
+  <ul id="hlist">
+	<!-- FACEBOOK --> <li><a href="https://www.facebook.com/AliceHoustonCopywriting" target="_blank" class="fab fa-facebook" title="Facebook"></a></li>
+	<!-- INSTAGRAM --> <li><a href="https://www.instagram.com/alicehoustoncopywriting/?hl=en" target="_blank" class="fab fa-instagram" title="Instagram"></a></li>
+	<!-- LINKEDIN --> <li><a href="https://www.linkedin.com/in/alicehouston/" target="_blank" class="fab fa-linkedin" title="LinkedIn" "></a></li>
+  </ul>
+  </div>
+  </div>
+<!-- end profile link section -->
+
+<!-- end container-fluid div (BS) -->
+</div>
+<!-- end body -->
+</body>
+<!-- end html -->
+</html>
