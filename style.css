@@ -264,19 +264,26 @@ ul#aboutlist li {
 }
 
 /* ---------- portfolio --- */
-ul#portfolio-list {
-  list-style-type: none;
+#project-section {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: float;
 }
 
-ul#portfolio-list li {
-  max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+#gl1, #gl2, #gl3, #maui, #traillo {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 0.5%;
+  width: 400px;
+  height: 280px;
+  object-fit: cover;
+}
 
+.profileimg:hover {
+  opacity: 0.5;
 }
 
 /* ---------- contact --- */
